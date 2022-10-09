@@ -1,10 +1,12 @@
 import React from 'react';
+
+import ImagPicker from './components/app/ImgPicker';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import ReduxThunk from 'redux-thunk';
 import FlashMessage from "react-native-flash-message";
 import { MenuProvider } from 'react-native-popup-menu';
-// import { composeWithDevTools } from 'redux-devtools-extension';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 import authReducer from './store/reducers/auth';
 import postsReducer from './store/reducers/posts';
